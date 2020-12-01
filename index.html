@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="js/popup.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header" style="background-image: url(images/bg-top.jpg)">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="header__logo" href="#"
+              ><img class="header__logo-img" src="images/logo.png" alt=""
+            /></a>
+            <div class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Home </a>
+                </li>
+
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Product</a>
+                </li>
+
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Promo</a>
+                </li>
+
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">About</a>
+                </li>
+
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__search">
+              <img
+                class="search__img"
+                onclick="showsr('flex')"
+                src="images/search.png"
+                alt=""
+              />
+              <div onclick="showsr('none')" id="gray-sr"></div>
+              <form id="search__form" class="search__form" method="get">
+                <input
+                  class="search__input"
+                  name="s"
+                  placeholder="Искать здесь..."
+                  type="search"
+                />
+                <button class="search__btn" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__info">
+          <h1 class="header__title">Title here</h1>
+          <p class="header__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+
+          <div class="register">
+            <button onclick="showreg('block')" class="register__btn wow swing">
+              Register Now
+            </button>
+
+            <div onclick="showreg('none')" id="gray-reg"></div>
+            <div class="register__window" id="register__window">
+              <img
+                class="register__img"
+                src="images/close.png"
+                alt=""
+                onclick="showreg('none')"
+              />
+              <h4 class="register__title">Register</h4>
+              <form class="register__form">
+                <input class="register__input" type="text" placeholder="Name" />
+                <input
+                  class="register__input"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="register__input"
+                  type="password"
+                  placeholder="Password"
+                />
+                <input
+                  class="register__input-btn"
+                  type="submit"
+                  value="Register"
+                />
+              </form>
+              <p class="register__text">
+                By registering on Musicology you agree to the
+                <a class="register__title-link current-page" href="#"
+                  >User Agreement</a
+                >
+                and
+                <a class="register__title-link current-page" href="#"
+                  >Privacy Policy</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="tour">
+      <div class="container">
+        <h3 class="section__title tour__title">Dance Tour</h3>
+        <p class="section__text tour__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="tour__items">
+          <div class="tour__item wow zoomInRight">
+            <img class="tour__item-img" src="images/tour-1.jpg" alt="" />
+            <h5 class="tour__item-title">America</h5>
+            <p class="tour__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="tour__item wow zoomInDown">
+            <img class="tour__item-img" src="images/tour-2.jpg" alt="" />
+            <h5 class="tour__item-title">Asia</h5>
+            <p class="tour__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="tour__item wow zoomInLeft">
+            <img class="tour__item-img" src="images/tour-3.jpg" alt="" />
+            <h5 class="tour__item-title">Australia</h5>
+            <p class="tour__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <h3 class="section__title price__title">Pricing</h3>
+        <p class="section__text price__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="price__items">
+          <div class="price__item wow zoomInRight">
+            <img class="price__item-img" src="images/price.png" alt="" />
+            <h5 class="price__item-title">Basic</h5>
+            <p class="price__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="price__item-price current-page" href="#">150$</a>
+          </div>
+          <div class="price__item wow zoomInUp">
+            <img class="price__item-img" src="images/price.png" alt="" />
+            <h5 class="price__item-title">professional</h5>
+            <p class="price__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="price__item-price current-page" href="#">200$</a>
+          </div>
+          <div class="price__item wow zoomInLeft">
+            <img class="price__item-img" src="images/price.png" alt="" />
+            <h5 class="price__item-title">ultimate</h5>
+            <p class="price__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="price__item-price current-page" href="#">250$</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__items">
+        <div class="info__item">
+          <img class="info__item-img" src="images/info-1.jpg" alt="" />
+          <div class="info__item-inner wow tada">
+            <h3 class="info__item-title section__title">AMAZING DANCE</h3>
+            <p class="info__item-text section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a class="info__item-btn current-page" href="#">read more</a>
+          </div>
+        </div>
+        <div class="info__item">
+          <img class="info__item-img" src="images/info-2.jpg" alt="" />
+          <div class="info__item-inner wow bounce">
+            <h3 class="info__item-title section__title">Best dance</h3>
+            <p class="info__item-text section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a class="info__item-btn current-page" href="#">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics">
+      <div class="container">
+        <h3 class="section__title statistics__title">Our Statistics</h3>
+        <p class="section__text statistics__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="statistics__info">
+          <div class="statistics__item wow rotateInDownLeft">
+            1240+ <span>Club</span>
+          </div>
+          <div class="statistics__item wow rotateIn">
+            2000+ <span>Active Member</span>
+          </div>
+          <div class="statistics__item wow rotateInUpRight">
+            1.000+ <span>Community</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="views" style="background-image: url(images/views-bg.jpg)">
+      <div class="container">
+        <p class="views__text wow bounceInDown">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <h3 class="views__author wow bounceInUp">Herbert Simon</h3>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <h3 class="section__title feedback__title">SUBSCRIBE</h3>
+        <p class="section__text feedback__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <form class="feedback__form">
+          <input
+            class="feedback__form-input wow fadeInTopLeft"
+            type="text"
+            placeholder="Your Email"
+          />
+          <button
+            class="feedback__form-btn current-page wow fadeInTopRight"
+            type="submit"
+          >
+            SUBSCRIBE
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <h6 class="footer__info-title">Musicology</h6>
+            <p class="footer__info-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+              dignissim enim.
+            </p>
+            <div class="footer__social">
+              <a class="footer__social-link" href="#"
+                ><img class="footer__social-img" src="images/inst.png" alt=""
+              /></a>
+              <a class="footer__social-link" href="#"
+                ><img class="footer__social-img" src="images/face.png" alt=""
+              /></a>
+              <a class="footer__social-link" href="#"
+                ><img
+                  class="footer__social-img"
+                  src="images/twitter.png"
+                  alt=""
+              /></a>
+              <a class="footer__social-link" href="#"
+                ><img class="footer__social-img" src="images/whats.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footer__lists">
+            <div class="footer__lists-item">
+              <div class="footer__list-title">About</div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page">History</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Our Team</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Brand Guidelines</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Terms & Condition</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__lists-item">
+              <div class="footer__list-title">Services</div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >How to Order</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Our Product</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Order Status</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page">Promo</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Payment Method</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__lists-item">
+              <div class="footer__list-title">Other</div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page">Help</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link current-page">Privacy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
